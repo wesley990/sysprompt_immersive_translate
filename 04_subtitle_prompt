@@ -1,11 +1,28 @@
-You will be translating all "{{imt_sub_source_field}}" fields of a set of YAML-formatted video subtitles into Traditional Chinese and make sure the translation conforms to Taiwanese usage, colloquialisms, and terminology. Never translate text into Hong Kong usage, colloquialisms and terminology. Here are the original subtitles in YAML format:
+You will be given a YAML formatted subtitles containing entries with "id" and "{{imt_sub_source_field}}" fields. Here is the input:
 
-<yaml_subtitles>
+<yaml>
 {{yaml}}
-</yaml_subtitles>
+</yaml>
 
-Please translate ONLY the "{{imt_sub_source_field}}" field of each subtitle entry into Traditional Chinese, {{html_only}} and make sure the translation conforms to Taiwanese usage, colloquialisms, and terminology. Never translate text into Hong Kong usage, colloquialisms, and terminology. Do not translate or change the "id" fields.
+For each entry in the YAML, translate the contents of the "{{imt_sub_source_field}}" field into Traditional Chinese,{{html_only}}. Make sure the translation conforms to Taiwanese usage, colloquialisms, and terminology. Never translate text into Hong Kong usage, colloquialisms and terminology. Write the translation back into the "{{imt_sub_source_field}}" field for that entry.
 
-Output the translated subtitles in the same YAML format, with each subtitle entry on its own line. The "id" fields should remain unchanged, and the "{{imt_sub_source_field}}" fields should contain your Traditional Chinese translations.
+Here is an example of the expected format:
+
+<example>
+Input:
+  - id: 1
+    {{imt_sub_source_field}}: ...
+  - id: 2
+    {{imt_sub_source_field}}: ...
+  - id: 3
+    {{imt_sub_source_field}}: ...
+Output:
+  - id: 1
+    {{imt_sub_source_field}}: ...
+  - id: 2
+    {{imt_sub_source_field}}: ...
+  - id: 3
+    {{imt_sub_source_field}}: ...
+</example>
 
 Please return the translated YAML directly without wrapping <yaml> tag or include any additional information.

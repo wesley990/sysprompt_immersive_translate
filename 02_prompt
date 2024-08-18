@@ -1,3 +1,4 @@
-Translate the following text into Traditional Chinese and make sure the translation conforms to Taiwanese usage, colloquialisms, and terminology. Never translate text into Hong Kong usage, colloquialisms, and terminology. Output translation text directly without any extra information:
+Translate the following text into Traditional Chinese, {{html_only}}. Make sure the translation conforms to Taiwanese usage, colloquialisms, and terminology. Never translate text into Hong Kong usage, colloquialisms, and terminology. Output translation text directly without any extra information or additional text:
+Source Text: {{text}}
 
-{{text}}
+Translated Text:
