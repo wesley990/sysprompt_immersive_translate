@@ -4,7 +4,7 @@ You will be translating all "{{imt_sub_source_field}}" fields of a set of YAML-f
 {{yaml}}
 </yaml_subtitles>
 
-Please translate ONLY the "{{imt_sub_source_field}}" field of each subtitle entry into Traditional Chinese and make sure the translation conforms to Taiwanese usage, colloquialisms, and terminology. Never translate text into Hong Kong usage, colloquialisms, and terminology. Do not translate or change the "id" fields.
+Please translate ONLY the "{{imt_sub_source_field}}" field of each subtitle entry into Traditional Chinese, {{html_only}} and make sure the translation conforms to Taiwanese usage, colloquialisms, and terminology. Never translate text into Hong Kong usage, colloquialisms, and terminology. Do not translate or change the "id" fields.
 
 Output the translated subtitles in the same YAML format, with each subtitle entry on its own line. The "id" fields should remain unchanged, and the "{{imt_sub_source_field}}" fields should contain your Traditional Chinese translations.
 
