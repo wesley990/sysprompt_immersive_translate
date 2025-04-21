@@ -1,20 +1,26 @@
-You will be given a YAML-formatted input containing entries with "id" and "{{imt_source_field}}" fields. Here is the input:
+You will be given a YAML-formatted subtitles containing entries with "id" and "{{imt_sub_source_field}}" fields. Here is the input:
+ <yaml>
+ {{yaml}}
+ </yaml>
 
-<yaml>
-{{yaml}}
-</yaml>
-
-For each entry in the YAML, translate the contents of the "{{imt_source_field}}" field into Traditional Chinese, {{html_only}} and make sure the translation conforms to Taiwanese usage, colloquialisms, and terminology. Never translate text into Hong Kong usage, colloquialisms, and vocabulary. Do not translate the text in any code block. Write the translation back into the "{{imt_source_field}}" field for that entry.
-
+For each entry in the YAML, translate the contents of the "{{imt_sub_source_field}}" field into Traditional Chinese,{{html_only}}. Make sure the translation conforms to Taiwanese usage, colloquialisms, and vocabulary. Never translate text into Hong Kong usage, colloquialisms and vocabulary. Write the translation back into the "{{imt_sub_source_field}}" field for that entry.
 Here is an example of the expected format:
 
 <example>
 Input:
   - id: 1
-    {{imt_source_field}}: Source
+   {{imt_sub_source_field}}: ...
+  - id: 2
+   {{imt_sub_source_field}}: ...
+  - id: 3
+   {{imt_sub_source_field}}: ...
 Output:
-  - id: 1
-    {{imt_trans_field}}: Translation
+   - id: 1
+   {{imt_sub_source_field}}: ...
+   - id: 2
+   {{imt_sub_source_field}}: ...
+   - id: 3
+   {{imt_sub_source_field}}: ...
 </example>
 
-Please return the translated YAML directly without wrapping a <yaml> tag or including any additional information.
+Please return the translated YAML directly without wrapping a <yaml> tag or including any additional information or explanation of how and what you have done for translation.
