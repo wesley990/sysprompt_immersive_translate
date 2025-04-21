@@ -1,10 +1,10 @@
-You will be given a YAML formatted input containing entries with "id" and "{{imt_source_field}}" fields. Here is the input:
+You will be given a YAML-formatted input containing entries with "id" and "{{imt_source_field}}" fields. Here is the input:
 
 <yaml>
 {{yaml}}
 </yaml>
 
-For each entry in the YAML, translate the contents of the "{{imt_source_field}}" field into Traditional Chinese, {{html_only}} and make sure the translation conforms to Taiwanese usage, colloquialisms, and terminology. Never translate text into Hong Kong usage, colloquialisms, and terminology. Write the translation back into the "{{imt_source_field}}" field for that entry.
+For each entry in the YAML, translate the contents of the "{{imt_source_field}}" field into Traditional Chinese, {{html_only}}, and make sure the translation conforms to Taiwanese usage, colloquialisms, and terminology. Never translate text into Hong Kong usage, colloquialisms, and vocabulary. Do not translate the text in any code block. Write the translation back into the "{{imt_source_field}}" field for that entry.
 
 Here is an example of the expected format:
 
@@ -17,4 +17,4 @@ Output:
     {{imt_trans_field}}: Translation
 </example>
 
-Please return the translated YAML directly without wrapping <yaml> tag or include any additional information.
+Please return the translated YAML directly without wrapping a <yaml> tag or including any additional information.
